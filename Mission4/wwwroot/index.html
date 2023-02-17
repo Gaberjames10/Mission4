@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--Here i have the title and the favicon, I also have the bootstrap sheet and the css sheet that I use-->
+    <meta charset="utf-8" />
+    <title>Gabe James</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img\favicon_io\favicon-16x16.png">
+
+    <link href="bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+<!--In the body I have my name, a picture of me boating which I love to do, a paraph talking about what I eant from this class, my top three
+    job choices and the form that calculates the grade-->
+    <h1>Gabe James</h1>
+
+    <img src="img/IMG_3683.jpg" width="680"
+         height="500" />
+
+    <p>
+        Being in this class is something that excites me and I hope to be able to learn another programming language, but more than that I
+        hope to learn how to learn and how to be productive in the assignments that I am given. I do not know what languages I will be learning
+        in my job, but I do know that learning how to be effective and in what ways I learn best will help me throughout my career.
+    </p>
+
+    <br />
+    <br />
+
+    <h2>3 Jobs I want most</h2>
+    <ol>
+        <li>Data Engineer</li>
+        <li>Database Manager</li>
+        <li>BI </li>
+    </ol>
+    <h2>Grade Percentage Calculator</h2>
+    <form>
+
+        <label>Assignments</label>
+        <input name="Assignments" /> <br />
+        <label>Group Project</label>
+        <input name="Group" /> <br />
+        <label>Quizzes</label>
+        <input name="Quizzes" /> <br />
+        <label>Midterm Exam</label>
+        <input name="Midterm" /> <br />
+        <label>Final Exam</label>
+        <input name="Final" /> <br />
+        <label>INTEX</label>
+        <input name="INTEX" /> <br />
+        <input type="button" value="Calculate" id="calculate" />
+    </form>
+<!--Here I call the jquery and the calculator and bring back the grade-->
+    <script src="lib/jQuery/jquery-3.6.3.min.js"></script>
+    <script src="js/calculator.js"></script>
+
+
+    <p id="result"></p>
+</body>
+</html>
